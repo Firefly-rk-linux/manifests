@@ -6,7 +6,7 @@
   
   <project name="docs" path="docs" dest-branch="rk3588/firefly-public" remote="firefly-linux-bsp"/>
   
-  <project name="device-rockchip" revision="firefly" path="device/rockchip" remote="firefly-linux-bsp">
+  <project name="device-rockchip" path="device/rockchip" remote="firefly-linux-bsp">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
