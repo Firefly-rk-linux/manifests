@@ -21,7 +21,7 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3588-package-file"/>
   </project>
   <project name="kernel" remote="firefly-linux-bsp"/>
-  <project name="prebuilts-gcc-linux-x86-aarch64-gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu"  path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu"/>
-  <project name="prebuilts-gcc-linux-x86-arm-gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf"  path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf"/>
+  <project name="prebuilts-gcc-linux-x86-aarch64-gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu"  path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" remote="firefly-linux-bsp"/>
+  <project name="prebuilts-gcc-linux-x86-arm-gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf"  path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" remote="firefly-linux-bsp"/>
   <project name="rkbin" remote="firefly-linux-bsp"/>
 </manifest>
