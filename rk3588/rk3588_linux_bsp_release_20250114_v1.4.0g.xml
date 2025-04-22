@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="include/firefly.xml" />
+  <default remote="firefly-linux-utils" sync-j="4" dest-branch="rk3588/firefly" revision="refs/tags/rk3588/linux_release_v1.4.0g"/>
+  <project name="u-boot" remote="firefly-linux-bsp"/>
+  
+  <project name="docs" path="docs" dest-branch="rk3588/firefly-public" remote="firefly-linux-bsp"/>
+  
+  <project name="device-rockchip" revision="firefly" path="device/rockchip" remote="firefly-linux-bsp">
+    <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+    <linkfile dest="device/rockchip/.target_product" src="rk3588"/>
+    <linkfile dest="firefly-update.sh" src="common/firefly-update.sh"/>
+  </project>
+  <project name="tools" dest-branch="rk3588/firefly-public" remote="firefly-linux-bsp">
+    <linkfile dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg" src="windows/RKDevTool/RKDevTool_Release/rk3588-config.cfg"/>
+    <linkfile dest="tools/windows/RKDevTool/rockdev/package-file" src="windows/RKDevTool/rockdev/rk3588-package-file"/>
+    <linkfile dest="tools/windows/RKDevTool/rockdev/mkupdate.bat" src="windows/RKDevTool/rockdev/rk3588-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3588-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3588-package-file"/>
+  </project>
+  <project name="kernel" remote="firefly-linux-bsp"/>
+  <project name="prebuilts-gcc-linux-x86-aarch64-gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu"  path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu"/>
+  <project name="prebuilts-gcc-linux-x86-arm-gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf"  path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf"/>
+  <project name="rkbin" remote="firefly-linux-bsp"/>
+</manifest>

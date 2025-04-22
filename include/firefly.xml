@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/Firefly-rk-linux" name="firefly-linux-bsp"/>
+  <remote fetch="https://github.com/Firefly-rk-linux-utils" name="firefly-linux-utils"/>
+</manifest>
