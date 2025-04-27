@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="include/firefly.xml" />
+  <default remote="firefly-linux-utils" sync-j="4" dest-branch="rk356x/firefly-5.10" revision="refs/tags/rk356x/linux5.10_release_v1.4.0c"/>
+
+  <project name="device-rockchip" path="device/rockchip" remote="firefly-linux-bsp">
+	<linkfile dest="build.sh" src="common/scripts/build.sh"/>
+	<linkfile dest="Makefile" src="common/Makefile"/>
+	<linkfile dest="rkflash.sh" src="common/scripts/rkflash.sh"/>
+	<linkfile dest="firefly-update.sh" src="common/scripts/firefly-update.sh"/>
+  </project>
+
+  <project name="docs" path="docs" dest-branch="rk356x/firefly-5.10-public" remote="firefly-linux-bsp"/>
+
+  <project name="kernel" remote="firefly-linux-bsp"/>
+  <project name="prebuilts-gcc-linux-x86-aarch64-gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu"  path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" remote="firefly-linux-bsp"/>
+  <project name="prebuilts-gcc-linux-x86-arm-gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf"  path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" remote="firefly-linux-bsp"/>
+  <project name="rkbin" remote="firefly-linux-bsp"/>
+  <project name="tools" dest-branch="rk356x/firefly-5.10-public" remote="firefly-linux-bsp"/>
+
+  <project name="u-boot"/>
+</manifest>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="rk356x_5.10/rk356x_linux5.10_bsp_release_20241220_v1.4.0c.xml"/>
+
+  <project name="app-lvgl_demo" path="app/lvgl_demo"/>
+  <project name="app-rkadk" path="app/rkadk"/>
+  <project name="buildroot"/>
+  <project name="buildroot-dl" path="buildroot/dl"/>
+  <project name="external-alsa-config" path="external/alsa-config"/>
+  <project name="external-camera_engine_rkaiq" dest-branch="rk356x/firefly-5.10-public" path="external/camera_engine_rkaiq"/>
+  <project name="external-chromium" dest-branch="rk356x/firefly-5.10-public" path="external/chromium"/>
+  <project name="external-common_algorithm" path="external/common_algorithm"/>
+  <project name="external-dpdk" path="external/dpdk"/>
+  <project name="external-drm-cursor" path="external/drm-cursor"/>
+  <project name="external-gstreamer-rockchip" path="external/gstreamer-rockchip"/>
+  <project name="external-libmali" dest-branch="rk356x/firefly-5.10-public" path="external/libmali"/>
+  <project name="external-linux-rga" path="external/linux-rga"/>
+  <project name="external-mpp" path="external/mpp"/>
+  <project name="external-quectel-cm" path="external/quectel-cm"/>
+  <project name="external-recovery" path="external/recovery"/>
+  <project name="external-rk_pcba_test" path="external/rk_pcba_test"/>
+  <project name="external-rknn-toolkit2" path="external/rknn-toolkit2"/>
+  <project name="external-rknpu2" path="external/rknpu2"/>
+  <project name="external-rkscript" path="external/rkscript"/>
+  <project name="external-rktoolkit" path="external/rktoolkit"/>
+  <project name="external-rkupdate" path="external/rkupdate"/>
+  <project name="external-rkwifibt" path="external/rkwifibt"/>
+  <project name="external-rkwifibt-app" path="external/rkwifibt-app"/>
+  <project name="external-rockchip-test" path="external/rockchip-test"/>
+  <project name="external-rockit" path="external/rockit"/>
+  <project name="external-security-bin" path="external/security/bin"/>
+  <project name="external-security-librkcrypto" path="external/security/librkcrypto"/>
+  <project name="external-security-rk_tee_user" path="external/security/rk_tee_user"/>
+  <project name="external-uac_app" path="external/uac_app"/>
+  <project name="external-uvc_app" path="external/uvc_app"/>
+  <project name="external-xserver" path="external/xserver"/>
+  <project name="yocto-meta-openembedded" path="yocto/meta-openembedded"/>
+  <project name="yocto-meta-qt5" path="yocto/meta-qt5"/>
+  <project name="yocto-meta-rockchip" path="yocto/meta-rockchip"/>
+  <project name="yocto-meta-clang" path="yocto/meta-clang"/>
+  <project name="yocto-meta-browser" path="yocto/meta-browser"/>
+  <project name="yocto-meta-lts-mixins" path="yocto/meta-lts-mixins"/>
+  <project name="yocto-poky" path="yocto/poky">
+    <linkfile dest="yocto/README.md" src="../../.repo/manifests/README_yocto.md"/>
+  </project>
+</manifest>
